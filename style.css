@@ -1,0 +1,324 @@
+/* Couleurs et fond */
+
+
+body}
+
+h1, h2, h3 {
+	font-family: 'OCR A Std', monospace;
+	background-color: #FFB6C1;
+	color: black;
+}
+h1 {
+	font-weight: 700;
+    font-size: 55px;
+    margin: 10px 10px;
+}
+
+h2 {
+	font-weight: 550;
+	font-size: 35px;
+	margin: 10px 10px;
+}
+
+a {
+	text-decoration: none;
+	color: greenyellow;
+}
+a:hover {
+	color: green;
+}
+
+
+p {
+	font-family: 'OCR A Std', monospace;	
+	font-family: 'Lora', serif;
+	font-weight: lighter;
+	color: whitesmoke;
+	font-size: 16px;
+}
+
+
+/* Custom */
+
+.container {
+	width: 700px;
+	margin: 40px auto;
+}
+
+.card-white {
+	background-color: #FFB6C1;
+	padding: 30px;
+	box-shadow: 10px 20px 30px rgba(7,7,7,7.7);
+	border-radius: 25px;
+	margin: 35px 50px ;
+	text-align: center;
+}
+
+.list-horizontal {
+	list-style: lower-hexadecimal;
+	padding-left: 0px;
+}
+.list-horizontal li {
+	display: inline;
+	padding: 30px;	
+}
+.list-horizontal i {
+	font-size: 50px;
+	color: purple;
+}
+.list-horizontal i:hover {
+	color: green;
+}
+
+#introduction p {
+	margin-bottom: 20px;
+}
+
+#profile {
+	margin: 0 auto;
+	height: auto;
+	width: 250px;
+	position: relative;
+}
+
+/* script trouver sur internet */
+
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  float: right;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.rating label:before {
+  content: '\2605';
+  font-size: 30px;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: goldenrod;
+  transition: color 0.3s;
+}
+
+
+/* script trouver sur internet */
+
+
+
+@keyframes square-animation {
+ 0% {
+  left: 0;
+  top: 0;
+ }
+
+ 10.5% {
+  left: 0;
+  top: 0;
+ }
+
+ 12.5% {
+  left: 32px;
+  top: 0;
+ }
+
+ 23% {
+  left: 32px;
+  top: 0;
+ }
+
+ 25% {
+  left: 64px;
+  top: 0;
+ }
+
+ 35.5% {
+  left: 64px;
+  top: 0;
+ }
+
+ 37.5% {
+  left: 64px;
+  top: 32px;
+ }
+
+ 48% {
+  left: 64px;
+  top: 32px;
+ }
+
+ 50% {
+  left: 32px;
+  top: 32px;
+ }
+
+ 60.5% {
+  left: 32px;
+  top: 32px;
+ }
+
+ 62.5% {
+  left: 32px;
+  top: 64px;
+ }
+
+ 73% {
+  left: 32px;
+  top: 64px;
+ }
+
+ 75% {
+  left: 0;
+  top: 64px;
+ }
+
+ 85.5% {
+  left: 0;
+  top: 64px;
+ }
+
+ 87.5% {
+  left: 0;
+  top: 32px;
+ }
+
+ 98% {
+  left: 0;
+  top: 32px;
+ }
+
+ 100% {
+  left: 0;
+  top: 0;
+ }
+}
+
+.loader {
+margin: 0 auto;
+ width: 96px;
+ height: 96px;
+ transform: rotate(45deg);
+}
+
+.loader-square {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 28px;
+ height: 28px;
+ margin: 2px;
+ border-radius: 0px;
+ background: black;
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+ animation: square-animation 10s ease-in-out infinite both;
+}
+
+.loader-square:nth-of-type(0) {
+ animation-delay: 0s;
+}
+
+.loader-square:nth-of-type(1) {
+ animation-delay: -1.4285714286s;
+}
+
+.loader-square:nth-of-type(2) {
+ animation-delay: -2.8571428571s;
+}
+
+.loader-square:nth-of-type(3) {
+ animation-delay: -4.2857142857s;
+}
+
+.loader-square:nth-of-type(4) {
+ animation-delay: -5.7142857143s;
+}
+
+.loader-square:nth-of-type(5) {
+ animation-delay: -7.1428571429s;
+}
+
+.loader-square:nth-of-type(6) {
+ animation-delay: -8.5714285714s;
+}
+
+.loader-square:nth-of-type(7) {
+ animation-delay: -10s;
+}
+
+
+/* script trouver sur internet */
+
+.btn2 {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #FFB6C1;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.btn2::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - -2px);
+  background-color: #FFB6C1;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.btn2::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 50px);
+  background-color: #FFB6C1;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.btn2:hover::before {
+  transform: translateY(-25px);
+  height: 0;
+}
+
+.btn2:hover::after {
+  transform: scaleX(0);
+  transition-delay: 0.15s;
+}
+
+.btn2:hover {
+  border: 2px solid #fefefe;
+}
+
+.btn2 span {
+  position: relative;
+  z-index: 3;
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+
